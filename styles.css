@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+}
+.frame {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 1408px;
+    width: 99vw;
+}
+.checkerboard {
+    max-width: 1408px;
+    width: 99vw;
+}
+
+.section {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    max-width: 128px;
+    width: 9vw;
+    min-height: 9vw;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar__exchangeable-ur {
+    background-color: #e50080;
+}
+.sidebar__unexchangeable-ur {
+    background-color: #1ab1f6;
+}
+.sidebar__exchangeable-sr {
+    background-color: #f8b656;
+}
+.sidebar__unexchangeable-sr {
+    background-color: #da57d8;
+}
+
+.background {
+    display: flex;
+    max-width: 1280px;
+    width: 90vw;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: #180134;
+}
+
+img {
+    display: block;
+    width: 9vw;
+    height: 9vw;
+    max-width: 128px;
+    max-height: 128px;
+    object-fit: contain;
+
+}
+
+.card {
+    width: 9vw;
+    height: 9vw;
+    max-width: 128px;
+    max-height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.section__sample {
+    width: 32vw;
+    max-width: 200px;
+    height: 10vw;
+    max-height: 62.5px;
+    justify-content: center;
+}
+.sample {
+    width: 16vw;
+    height: 10vw;
+    max-width: 100px;
+    max-height: 62.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sampleImg {
+    width: 10vw;
+    height: 10vw;
+    max-width: 62.5px;
+    max-height: 62.5px;
+}
+.unidolized {
+    position: absolute;
+}
+.idolized {
+    position: absolute;
+}
+.rainbow {
+    position: absolute;
+}
+.signature {
+    position: absolute;
+}
+
+.limitbreak {
+    position: absolute;
+}
+
+.button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ff51c4;
+    font-size: 3vw;
+    color: white;
+    width: 16vw;
+    height: 12vw;
+    max-width: 100px;
+    max-height: 75px;
+    line-height: 110%;
+    margin: 3.2vw;
+    border-radius: 10px;
+    border: none;
+}
+
+.applyDataButton {
+    margin: 0;
+}
+
+.modalSmallButton {
+    width: 15vw;
+    height: 9vw;
+    max-width: 94px;
+    max-height: 55px;
+    margin: 1vw;
+}
+
+.sortByMemberSwitch, .changeCardStyleButton, .displayURSRButton {
+    width: 32vw;
+    height: 5vw;
+    max-width: 200px;
+    max-height: 30px;
+    margin: 1vw;
+    font-size: 2.5vw;
+}
+
+dialog {
+    background-color: #F8C8C4;
+    border: 0;
+    border-radius: 20px;
+    -ms-overflow-style: none;  /* IE and Edge 스크롤바 없애기*/
+    scrollbar-width: none; /*Firefox 스크롤바 없애기*/
+}
+
+dialog::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera 스크롤바 없애기*/
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vw;
+    max-width: 250px;
+    max-height: 250px;
+}
+.input_body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 16vw;
+    max-height: 100px;
+}
+
+label {
+    display:inline-block;
+    font-family: 'Nunito', sans-serif;
+    color: #ff51c4;
+    font-size: 3.2vw; 
+    width: 14.4vw;
+    line-height: 100%;
+    max-width: 90px;
+}
+input {
+	width: 16vw;
+    height: 4vw;
+    max-width: 100px;
+    max-height: 25px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #b2ffdd;
+}
+
+input:focus {
+    outline: 2px solid #00C7B1;
+}
+
+.dataArea {
+    width: 32vw;
+    height: 24vw;
+    max-width: 200px;
+    max-height: 150px;
+    resize: none;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #b2ffdd;
+    border-radius: 10px;
+    -ms-overflow-style: none;  /* IE and Edge 스크롤바 없애기*/
+    scrollbar-width: none; /*Firefox 스크롤바 없애기*/
+}
+
+.dataArea:focus {
+    outline: 0;
+}
+
+.dataArea::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera 스크롤바 없애기*/
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    max-width: 1408px;
+    width: 99vw;
+}
+
+.profile > a > img {
+    width: 6vw;
+    height: 7.5vw;
+    max-width: 50px;
+    max-height: 62.5px;
+    margin: 2vw;
+}
+
+.invisible {
+    opacity: 0%;
+}
+
+.displayNone {
+    display: none;
+}
+
+.honoka__order {
+    order: 1;
+}
+.eli__order {
+    order: 2;
+}
+.kotori__order {
+    order: 3;
+}
+.umi__order {
+    order: 4;
+}
+.rin__order {
+    order: 5;
+}
+.maki__order {
+    order: 6;
+}
+.nozomi__order {
+    order: 7;
+}
+.hanayo__order {
+    order: 8;
+}
+.nico__order {
+    order: 9;
+}
+.chika__order {
+    order: 10;
+}
+.riko__order {
+    order: 11;
+}
+.kanan__order {
+    order: 12;
+}
+.dia__order {
+    order: 13;
+}
+.you__order {
+    order: 14;
+}
+.yoshiko__order {
+    order: 15;
+}
+.hanamaru__order {
+    order: 16;
+}
+.mari__order {
+    order: 17;
+}
+.ruby__order {
+    order: 18;
+}
+.ayumu__order {
+    order: 19;
+}
+.kasumi__order {
+    order: 20;
+}
+.shizuku__order {
+    order: 21;
+}
+.karin__order {
+    order: 22;
+}
+.ai__order {
+    order: 23;
+}
+.kanata__order {
+    order: 24;
+}
+.setsuna__order {
+    order: 25;
+}
+.emma__order {
+    order: 26;
+}
+.rina__order {
+    order: 27;
+}
+.shioriko__order {
+    order: 28;
+}
+.mia__order {
+    order: 29;
+}
+.lanzhu__order {
+    order: 30;
+}
+
+@media screen and (min-width: 625px) {
+    .button {
+        font-size: 19px;
+    }
+    label {
+        font-size: 20px;
+    }
+    .modalSmallButton, .sortByMemberSwitch, .changeCardStyleButton, .displayURSRButton {
+        margin: 6px;
+    }
+    .sortByMemberSwitch, .changeCardStyleButton, .displayURSRButton {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1408px) {
+    .sidebar {
+        min-height: 128px;
+    }
+}
