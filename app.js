@@ -306,6 +306,8 @@ function changeCardStyle() {
             signature[i].classList.remove("displayNone");
             rainbow[i].classList.add("displayNone");
             limitbreak[i].classList.remove("maxLimitIsInvisible");
+            signature[i].classList.add("animation");
+            rainbow[i].classList.remove("animation");
         }
         for (let i = 0; i < maxLimit.length; i++) {
             maxLimit[i].classList.remove("displayNone");
@@ -316,6 +318,8 @@ function changeCardStyle() {
             signature[i].classList.add("displayNone");
             rainbow[i].classList.remove("displayNone");
             limitbreak[i].classList.remove("maxLimitIsInvisible");
+            signature[i].classList.remove("animation");
+            rainbow[i].classList.add("animation");
         }
         for (let i = 0; i < maxLimit.length; i++) {
             maxLimit[i].classList.remove("displayNone");
@@ -326,6 +330,8 @@ function changeCardStyle() {
             signature[i].classList.remove("displayNone");
             rainbow[i].classList.remove("displayNone");
             limitbreak[i].classList.remove("maxLimitIsInvisible");
+            signature[i].classList.remove("animation");
+            rainbow[i].classList.add("animation");
         }
         for (let i = 0; i < maxLimit.length; i++) {
             maxLimit[i].classList.remove("displayNone");
