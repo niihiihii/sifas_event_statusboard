@@ -82,11 +82,11 @@ function changeCard(cards, count, num) {
     displayCard(cards, count, num);
     if (count[num] % 7 === 6) {
         for (let i = 0; i < signature.length; i++) {
-            signature[i].classList.toggle("animation");
-            rainbow[i].classList.toggle("animation");
+            signature[i].classList.toggle("displayNone");
+            rainbow[i].classList.toggle("displayNone");
             void document.querySelector(".checkerboard").offsetWidth;
-            signature[i].classList.toggle("animation");
-            rainbow[i].classList.toggle("animation");
+            signature[i].classList.toggle("displayNone");
+            rainbow[i].classList.toggle("displayNone");
         }
     }
 }
@@ -177,11 +177,11 @@ function applyData() {
         displayCard(sr_cards, sr_count ,i);
     }
     for (let i = 0; i < signature.length; i++) {
-        signature[i].classList.toggle("animation");
-        rainbow[i].classList.toggle("animation");
+        signature[i].classList.toggle("displayNone");
+        rainbow[i].classList.toggle("displayNone");
         void document.querySelector(".checkerboard").offsetWidth;
-        signature[i].classList.toggle("animation");
-        rainbow[i].classList.toggle("animation");
+        signature[i].classList.toggle("displayNone");
+        rainbow[i].classList.toggle("displayNone");
     }
     inputDataModal.close();
     
