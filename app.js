@@ -80,15 +80,6 @@ function checkMaxLimit() {
 function changeCard(cards, count, num) {
     count[num]++;
     displayCard(cards, count, num);
-    if (count[num] % 7 === 6) {
-        for (let i = 0; i < signature.length; i++) {
-            signature[i].classList.toggle("displayNone");
-            rainbow[i].classList.toggle("displayNone");
-            void document.querySelector(".checkerboard").offsetWidth;
-            signature[i].classList.toggle("displayNone");
-            rainbow[i].classList.toggle("displayNone");
-        }
-    }
 }
 
 for (let i = 0; i < ur_count.length; i++) {
@@ -175,13 +166,6 @@ function applyData() {
     }
     for (let i = 0; i < sr_count.length; i++) {
         displayCard(sr_cards, sr_count ,i);
-    }
-    for (let i = 0; i < signature.length; i++) {
-        signature[i].classList.toggle("displayNone");
-        rainbow[i].classList.toggle("displayNone");
-        void document.querySelector(".checkerboard").offsetWidth;
-        signature[i].classList.toggle("displayNone");
-        rainbow[i].classList.toggle("displayNone");
     }
     inputDataModal.close();
     
