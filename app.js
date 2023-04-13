@@ -80,6 +80,15 @@ function checkMaxLimit() {
 function changeCard(cards, count, num) {
     count[num]++;
     displayCard(cards, count, num);
+    if (count[num] % 7 === 6) {
+        for (let i = 0; i < signature.length; i++) {
+            signature[i].classList.toggle("animation");
+            rainbow[i].classList.toggle("animation");
+            void document.querySelector(".checkerboard").offsetWidth;
+            signature[i].classList.toggle("animation");
+            rainbow[i].classList.toggle("animation");
+        }
+    }
 }
 
 for (let i = 0; i < ur_count.length; i++) {
@@ -167,7 +176,13 @@ function applyData() {
     for (let i = 0; i < sr_count.length; i++) {
         displayCard(sr_cards, sr_count ,i);
     }
-
+    for (let i = 0; i < signature.length; i++) {
+        signature[i].classList.toggle("animation");
+        rainbow[i].classList.toggle("animation");
+        void document.querySelector(".checkerboard").offsetWidth;
+        signature[i].classList.toggle("animation");
+        rainbow[i].classList.toggle("animation");
+    }
     inputDataModal.close();
     
 }
@@ -294,9 +309,9 @@ sortByMemberSwitch.addEventListener("click", sortByMemberOnOff);
 
 
 /* Change Card Style Button */
+const signature = document.querySelectorAll(".signature");
+const rainbow = document.querySelectorAll(".rainbow");
 function changeCardStyle() {
-    const signature = document.querySelectorAll(".signature");
-    const rainbow = document.querySelectorAll(".rainbow");
     const limitbreak = document.querySelectorAll(".limitbreak");
     const maxLimit = document.querySelectorAll(".maxlimit");
 
