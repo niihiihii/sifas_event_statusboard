@@ -249,24 +249,8 @@ input:focus {
     margin: 2vw;
 }
 
-@keyframes fadeInOut {
-    0% {
-        opacity: 100%;
-    }
-    50% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-.animation {
-    animation: fadeInOut 5s infinite;
-}
-
 .invisible {
-    display: none;
+    opacity: 0%;
 }
 
 .displayNone {
